@@ -25,7 +25,7 @@ SECRET_KEY = '43$1@mm=&=z6kjq@c3b(dpinj=l&yq(7u_myqq0yvf44@ao4n+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['review-rest-api01101998.herokuapp.com']
 
 
 # Application definition
