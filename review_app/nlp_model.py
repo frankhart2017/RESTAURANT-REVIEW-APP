@@ -1,12 +1,17 @@
 # NLP model to predict restaurant reviews
 
+# Location of BASE_DIR
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print(os.path.join(BASE_DIR, "review_app/nlp.sav"))
+
 # Load the model
 import pickle
-classifier = pickle.load(open('C:\\Users\\Pavilion\\Desktop\\DJANGO\\review_restaurant\\review_app\\nlp.sav', 'rb'))
+classifier = pickle.load(open(os.path.join(BASE_DIR, 'review_app/nlp.sav'), 'rb'))
 
 # Load the vectorizer
 import pickle
-cv = pickle.load(open('C:\\Users\\Pavilion\\Desktop\\DJANGO\\review_restaurant\\review_app\\vectorizer.sav', 'rb'))
+cv = pickle.load(open(os.path.join(BASE_DIR, 'review_app/vectorizer.sav'), 'rb'))
 
 # Import the libraries
 import re
